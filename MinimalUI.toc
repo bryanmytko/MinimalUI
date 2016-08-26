@@ -1,0 +1,7 @@
+## Interface: 70000
+## Title: MinimalUI
+## Version: 0.1
+## Author: Bryan Mytko
+
+MinimalUI.lua
+MinimalUI.xml
