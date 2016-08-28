@@ -6,38 +6,6 @@
 --
 -- Greeting()
 
--- Create a hidden parent to attach frames we want to hide to
-local HiddenUI = CreateFrame("Frame", "BlizzardUIHider", UIParent)
-HiddenUI:Hide()
-
--- Hide default frames
--- MainMenuBarArtFrame:SetParent(HiddenUI)
--- MainMenuExpBar:SetParent(HiddenUI)
--- MainMenuBarMaxLevelBar:SetParent(HiddenUI)
-
--- Hide Chat Frame
-
-local function hideChatUI()
-  _G[("GeneralDockManager")]:SetParent(HiddenUI);
-  _G[("FriendsMicroButton")]:SetParent(HiddenUI);
-  _G[("ChatFrameMenuButton")]:SetParent(HiddenUI);
-
-  for i = 1, 10 do
-    _G[("ChatFrame%d"):format(i)]:Hide()
-    _G[("ChatFrame%dEditBox"):format(i)]:SetParent(HiddenUI);
-  end
-end
-
---hideChatUI()
---DEFAULT_CHAT_FRAME:SetScript("OnShow", hideChatUI);
-
-SLASH_HIDECHAT1 = "/hidechat";
-
-function SlashCmdList.HIDECHAT(msg, editbox)
-  message("HI");
-  hideChatUI();
-end
-
 local start, duration, enable = GetActionCooldown(1);
 
 -- if (start == 0) then

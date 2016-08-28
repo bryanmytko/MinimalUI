@@ -4,5 +4,5 @@
 ## Version: 0.1
 ## Author: Bryan Mytko
 
+HideChat.lua
 MinimalUI.lua
-MinimalUI.xml
