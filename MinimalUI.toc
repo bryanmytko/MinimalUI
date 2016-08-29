@@ -6,3 +6,4 @@
 
 HideChat.lua
 MinimalUI.lua
+ToyBox.lua
