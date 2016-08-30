@@ -1,11 +1,5 @@
-
 local HiddenUI = CreateFrame("Frame", "BlizzardUIHider", UIParent)
 HiddenUI:Hide()
-
--- Hide default frames
--- MainMenuBarArtFrame:SetParent(HiddenUI)
--- MainMenuExpBar:SetParent(HiddenUI)
--- MainMenuBarMaxLevelBar:SetParent(HiddenUI)
 
 -- Hide Chat Frame
 local function toggleChatUI(parent)
@@ -18,9 +12,6 @@ local function toggleChatUI(parent)
     _G[("ChatFrame%dEditBox"):format(i)]:SetParent(parent);
   end
 end
-
---hideChatUI()
---DEFAULT_CHAT_FRAME:SetScript("OnShow", hideChatUI);
 
 SLASH_TOGGLECHAT1 = "/togglechat";
 

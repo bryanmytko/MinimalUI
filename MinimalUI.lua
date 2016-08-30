@@ -5,9 +5,21 @@
 -- end
 --
 -- Greeting()
+--
+--
+-- @TODO
+-- Hide default frames
+-- MainMenuBarArtFrame:SetParent(HiddenUI)
+-- MainMenuExpBar:SetParent(HiddenUI)
+-- MainMenuBarMaxLevelBar:SetParent(HiddenUI)
+--
+--hideChatUI()
+--DEFAULT_CHAT_FRAME:SetScript("OnShow", hideChatUI);
+
 
 local start, duration, enable = GetActionCooldown(1);
 
+-- @TODO
 -- if (start == 0) then
 --   message('cooling')
 -- else
