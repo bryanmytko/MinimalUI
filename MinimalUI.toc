@@ -1,6 +1,6 @@
 ## Interface: 70000
 ## Title: MinimalUI
-## Notes: Hello!
+## Notes: A personal addon for small customizations
 ## Version: 0.1
 ## Author: Bryan Mytko
 
